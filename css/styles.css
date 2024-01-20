@@ -1,0 +1,213 @@
+Paleta de Colores
+/* 
+Naranja			    #fc7800	
+Rosa			    #fc5b6b
+Naranja Claro		#ffbb42
+Azul Claro		    #5bd3d3
+Negro Envejecido	#191919
+
+Naranja Bitter		#f16317
+Marron Bitter		#440a08
+Verde Oliva		    #b4c000
+Verde  Claro		#12663e
+Verde Oscuro		#045e2d
+Gris Claro		    #e2dede */
+
+/* Google Font:
+Londrina Solid		https://fonts.google.com/specimen/Londrina+Solid
+Mulish			    https://fonts.google.com/specimen/Mulish */
+
+/* .................... RESET CSS ................. */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+text-decoration: none;
+font-size: 66.66%;
+list-style-type: none;
+}
+
+/* ....................  HEADER  ................ */
+/* HEADER */
+header {
+    height: 175px;
+    width: 100vw;
+    /* position: sticky; */
+    top: 0px;
+    border-top: 10px solid #045e2d;;
+    border-bottom: 10px solid #045e2d;
+    background-color:#191919;
+}
+
+header .header-encabezado {    
+   
+    display: flex;
+}
+
+/* LOGO HEADER */
+header .logo {
+    align-items: center;
+}
+
+header .logo img {
+    width: 120px;
+    height: 120px;
+}
+
+/*  HEADER LEYENDA */
+header div .leyenda {
+    width: 80%;
+    flex-flow: column wrap;
+    align-content: center;
+    justify-content: center;
+}
+header h1 {
+    text-align: center;
+    color: #e2dede;
+    text-shadow: 10px #f0eaea;
+    font-size: 4rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 2px 3px 0px rgba(252,91,107,0.64);;
+    }
+
+header h2 {
+    text-align: center;
+    color: #b4c000;
+    font-size: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* HEADER NAV BAR */
+header nav  li{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    padding-right: 25px;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+
+header nav a {
+    font-size: 0.9rem;
+    color:#fc5b6b ;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    font-size: 1.1rem;
+    color:#b4c000 ;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+/* .................................. MAIN ........................ */
+main img{
+    width: 50%;
+    border-radius: 20px;
+}
+main {
+    background-color: #f16317;
+   
+}
+
+
+
+
+
+
+
+/* ................................. FOOTER ...................... */
+footer {
+    height: 180px;
+    width: 100vw;
+}
+
+.footer-contenedor {
+    border-top: 10px solid #045e2d;;
+    border-bottom: 10px solid #045e2d;
+    background-color:#191919;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-content: center;
+}
+
+footer .logo {
+    margin: 5px;
+    border-right: 1px dotted white;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    
+}
+
+footer .redes-sociales {
+    margin: 5px;
+    border-right: 1px dotted white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    column-gap: 15px;
+    align-items: center;
+}
+
+footer .legal {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: #fc5b6b;
+    font-size: 1rem;
+}
+
+footer .logo img {
+    height: 80px;
+    width: 80px;
+    padding: 5px;
+}
+
+footer .redes-sociales img {
+    height: 60px;
+    width: 60px;
+    padding: 5px;
+}
+
+footer .logo h3{
+    font-size: 1.2rem;
+    color:#fc5b6b;
+    padding: 5px;
+}
+
+footer .logo h4{
+    font-size: 0.9rem;
+    color:#fc5b6b;
+    padding: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
