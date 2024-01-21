@@ -3,50 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contactos</title>
+    <title>Home</title>
 
-<!-- Favicon -->
-<link rel="icon" type="image/x-icon" href="./multimedia/Logo Bitter.png">
+<!-- ..........................................  Favicon  ............................................. -->
+    <link rel="icon" type="image/x-icon" href="./multimedia/Logo Bitter.png">
 
-<!-- Link CSS -->
-<link rel="stylesheet" href="../css/styles.css">
+<!--.........................................   CSS Bootstrap  ........................................ -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
-<!-- CSS Nav Bar -->
-<style>
-    nav #contactos {
-        color: hwb(86 21% 4%);
-        text-transform: uppercase;
-        font-size: 0.8rem;
-    }
+<!-- ......................................... CSS Propio  .............................................-->
+    <link rel="stylesheet" href="../css/styles.css">
+
+<!-- ..........................................   CSS Nav Bar   ........................................-->
+    <style>
+nav #contactos {
+    color: hwb(86 21% 4%);
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
     </style>
 
 </head>
 
+<!--............................................   BODY ...............................................-->
 <body>
 
-    <header> 
-        <!-- Logo Bitter -->
-        <div class="logo">
-            <img src="../multimedia/logo_bitter_fondo_blanco.png" alt="Logo Bitter">
-        </div>
+<!-- ............................................ HEADER...............................................-->
+    <header >
+        <div class="container">
+            <div class="row">
+                <!-- Logo Bitter y leyenda-->
+                <div class="col-lg-5 col-md-6  logo">
+                        <a href="#"><img src="../multimedia/logo_bitter_fondo_blanco.png" alt="Logo Bitter"></a>
+                        <h1>  Bitter & Sour </h1>
+                        <h2> Lo Mejor de la Gastronomía</h2>
+                </div>
+                    
+                <!-- Barra de Navegacion -->
+                <nav class="col-lg-7 col-md-6 barra-nav">
+                    <li>
+                        <a href="#"><img src="../multimedia/WhatsApp_icon.png" width="30"></a>
+                        <ul><a href="../index.html" >Inicio</a></ul>
+                        <ul><a href="./nosotros.html" >Nosotros</a></ul>
+                        <ul><a href="#" id="contactos">Contactos</a></ul>
+                        <ul><a href="./recetas.html" >Recetas</a></ul>
+                        <ul><a href="./ventas.html" >Ventas</a></ul>
 
-        <!-- Leyenda header -->
-        <div>
-            <h1>  Bitter & Sour </h1>
-            <h2> Lo Mejor de la Gastronomía</h2>
-        </div>
-
-        <!-- Barra de Navegacion -->
-        <div>
-            <nav>
-                <li>
-                    <ul><a href="../index.html" >Inicio</a></ul>
-                    <ul><a href="./nosotros.html" >Nosotros</a></ul>
-                    <ul><a href="#" id="contactos">Contactos</a></ul>
-                    <ul><a href="./recetas.html" >Recetas</a></ul>
-                    <ul><a href="./ventas.html" >Ventas</a></ul>
-                </li>
-            </nav>
+                    </li>
+                </nav>
+            </div>
         </div>
     </header>
 
