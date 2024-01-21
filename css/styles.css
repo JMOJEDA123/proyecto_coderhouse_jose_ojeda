@@ -1,4 +1,4 @@
-Paleta de Colores
+/* ......................................... PALETA DE COLORES ................................ */
 /* 
 Naranja			    #fc7800	
 Rosa			    #fc5b6b
@@ -17,7 +17,7 @@ Gris Claro		    #e2dede */
 Londrina Solid		https://fonts.google.com/specimen/Londrina+Solid
 Mulish			    https://fonts.google.com/specimen/Mulish */
 
-/* .................... RESET CSS ................. */
+/* ........................................  RESET CSS  ....................................... */
 * {
 margin: 0;
 padding: 0;
@@ -27,76 +27,52 @@ font-size: 66.66%;
 list-style-type: none;
 }
 
-/* ....................  HEADER  ................ */
-/* HEADER */
+/* ........................................  HEADER  ............................................ */
+
 header {
-    height: 175px;
-    width: 100%;
     border-top: 10px solid #045e2d;;
     border-bottom: 10px solid #045e2d;
     background-color:#191919;
-}
-
-header .header-encabezado {    
-   
-    display: flex;
-}
-
-/* LOGO HEADER */
-header .logo {
-    align-items: center;
+    color:#ffffff;
 }
 
 header .logo img {
-    width: 120px;
-    height: 120px;
+    width: 80px;
+    height: 80px;
+    padding-top:10px ;
 }
 
-/*  HEADER LEYENDA */
-header div .leyenda {
-    width: 80%;
-    flex-flow: column wrap;
-    align-content: center;
-    justify-content: center;
-}
-header h1 {
-    text-align: center;
-    color: #e2dede;
-    text-shadow: 10px #f0eaea;
-    font-size: 4rem;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-shadow: 2px 3px 0px rgba(252,91,107,0.64);;
-    }
-
-header h2 {
-    text-align: center;
-    color: #b4c000;
-    font-size: 2rem;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-/* HEADER NAV BAR */
-header nav  li{
+header nav li {
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-end;
-    padding-right: 25px;
-    cursor: pointer;
-    margin-bottom: 50px;
+    align-items: flex-end;
+
 }
 
 header nav a {
-    font-size: 0.9rem;
-    color:#fc5b6b ;
+    font-size: 1.5rem;
+    color:#fc051d ;
     text-decoration: none;
 }
 
 header nav a:hover {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     color:#b4c000 ;
     text-transform: uppercase;
     text-decoration: none;
 }
+
+header h1 {
+    text-shadow: 3px 3px 2px rgba(255,187,66,0.6);
+    font-size: 2.5rem;
+}
+
+header h2 {
+    font-size: 1.2rem;
+}
+
+
 
 
 
@@ -109,10 +85,19 @@ header nav a:hover {
 main img{
     width: 50%;
     border-radius: 20px;
+    text-align: center;
 }
+
 main {
     background-color: #f16317;
-   
+}
+
+.main-leyenda {
+    padding-top: 5px;
+    width: 80vw;
+    border: 2px solid black;
+    border-radius: 15px;
+    box-shadow: white;
 }
 
 
@@ -151,8 +136,20 @@ footer .legal {
     justify-content: space-around;
     align-content: center;
     align-items: center;
+    
+}
+
+footer .legal a {
+    text-decoration: none;
     color: #fc5b6b;
     font-size: 0.5rem;
+    font-size: 1.2rem;
+}
+
+footer .legal a:hover {
+    text-decoration: none;
+    color: white
+
 }
 
 footer .logo img {
@@ -166,23 +163,30 @@ footer .redes-sociales img {
     width: 35px;
 }
 
+footer .redes-sociales img:hover {
+    transform: scale(1.3);
+    box-shadow: 0px 0px 2px 2px #ec731e;
+}
+
 footer h3{
-    font-size: 1.0rem;
+    font-size: 1.1rem;
     color:#fc5b6b;
     padding: 5px;
     font-style: italic;
 }
 
 footer h4{
-    font-size: 0.7rem;
+    font-size: 0.9rem;
     color:#fc5b6b;
     padding: 5px;
 }
 
 footer h5 {
-    font-size: 0.7rem;
+    font-size: 1rem;
     font-style: italic;
 }
+
+
 
 
 

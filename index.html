@@ -5,65 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
 
-<!-- Favicon -->
-<link rel="icon" type="image/x-icon" href="./multimedia/Logo Bitter.png">
+<!-- ..........................................  Favicon  ............................................. -->
+    <link rel="icon" type="image/x-icon" href="./multimedia/Logo Bitter.png">
 
-<!-- CSS Bootstrap -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<!--.........................................   CSS Bootstrap  ........................................ -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
-<!-- CSS Propio-->
-<link rel="stylesheet" href="./css/styles.css">
+<!-- ......................................... CSS Propio  .............................................-->
+    <link rel="stylesheet" href="./css/styles.css">
 
-<!-- CSS Nav Bar -->
-<style>
+<!-- ..........................................   CSS Nav Bar   ........................................-->
+    <style>
 nav #home {
     color: hwb(86 21% 4%);
     text-transform: uppercase;
-    font-size: 1.0rem;
+    font-size: 1.2rem;
     font-weight: bold;
-    
 }
-</style>
+    </style>
 
 </head>
 
-<!-- BODY -->
+<!--............................................   BODY ...............................................-->
 <body>
 
-<!-- .................................... HEADER.................................................-->
-    <header>
-        
-        <div class="header-encabezado" >
-
-            <!-- Logo Bitter -->
-            <div class="logo">
-                    <img src="./multimedia/logo_bitter_fondo_blanco.png" alt="Logo Bitter" >
+<!-- ............................................ HEADER...............................................-->
+    <header >
+        <div class="container">
+            <div class="row">
+                <!-- Logo Bitter y leyenda-->
+                <div class="col-lg-5 col-md-6  logo">
+                        <a href="#"><img src="./multimedia/logo_bitter_fondo_blanco.png" alt="Logo Bitter"></a>
+                        <h1>  Bitter & Sour </h1>
+                        <h2> Lo Mejor de la Gastronomía</h2>
+                </div>
+                    
+                <!-- Barra de Navegacion -->
+                <nav class="col-lg-7 col-md-6 barra-nav">
+                        
+                        <li>
+                            <a href="#"><img src="./multimedia/WhatsApp_icon.png" width="30"></a>
+                            <ul><a href="#" id="home">Inicio</a></ul>
+                            <ul><a href="./pages/nosotros.html" >Nosotros</a></ul>
+                            <ul><a href="./pages/contactos.html" >Contactos</a></ul>
+                            <ul><a href="./pages/recetas.html" >Recetas</a></ul>
+                            <ul><a href="./pages/ventas.html" >Ventas</a></ul>
+                        </li>
+                </nav>
             </div>
-
-            <!-- Leyenda header -->
-            <div class="leyenda" >
-                <h1>  Bitter & Sour </h1>
-                <h2> Lo Mejor de la Gastronomía</h2>
-            </div>
-
         </div>
-        
-        <!-- Barra de Navegacion -->
-        <nav class="barra-nav">
-                    <li>
-                        <ul><a href="#" id="home">Inicio</a></ul>
-                        <ul><a href="./pages/nosotros.html" >Nosotros</a></ul>
-                        <ul><a href="./pages/contactos.html" >Contactos</a></ul>
-                        <ul><a href="./pages/recetas.html" >Recetas</a></ul>
-                        <ul><a href="./pages/ventas.html" >Ventas</a></ul>
-                    </li>
-         </nav>
-        
-        
-     </header>
+    </header>
 
-     <!-- ......................................... MAIN .............................................. -->
+
+
+
+
+
+
+
+    <!-- ......................................... MAIN .............................................. -->
     <main>
+
+        <div class="main-leyenda">
+            <h1>Te invitamos a conocer un poco de nuestra gastronomia... Tenemos gran variadad de los platos de las <br> diferentes culturas del mundo y de la mas fina pasteleria.</h1>
+        </div>
+
 
         <!-- Carrusel Boostrap -->
         <div id="carouselExampleIndicators" class="carousel slide">
@@ -75,30 +81,30 @@ nav #home {
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
             </div>
 
-            <div class="carousel-inner">
+            <div class="carousel-inner" >
                 <div class="carousel-item active">
                     <h2>Pasteleria y Delicatesse</h2>
-                    <img src="./multimedia/Pasteleria y tortas.png" class="d-block w-50" alt="...">
+                    <img src="./multimedia/Pasteleria y tortas.png" class="d-block img-fluid" alt="Foto de pasteleria ">
                 </div>
             
                 <div class="carousel-item">
                     <h2>Comida Venezolana - Arepas</h2>
-                    <img src="./multimedia/Comida Venezolana.png" class="d-block w-50" alt="...">
+                    <img src="./multimedia/Comida Venezolana.png" class="d-block img-fluid" alt="...">
                 </div>
 
                 <div class="carousel-item">
                     <h2>Comida Venezolana... Se te Antoja unos Ricos Tequeños...?</h2>
-                    <img src="./multimedia/2 Comida Venezolana.png" class="d-block w-50" alt="...">
+                    <img src="./multimedia/2 Comida Venezolana.png" class="d-block img-fluid" alt="...">
                 </div>
 
                 <div class="carousel-item">
                     <h2>Comida Asiatica... Por que no Pruebas un Rico Pollo Agridulce...?</h2>
-                    <img src="./multimedia/Comida asiatica.png" class="d-block w-50" alt="...">
+                    <img src="./multimedia/Comida asiatica.png" class="d-block img-fluid" alt="...">
                 </div>
 
                 <div class="carousel-item">
                     <h2>Comida Mexicana... Y si Intentamos unos Picantes Tacos...?</h2>
-                    <img src="./multimedia/Comida Mexicana.png" class="d-block w-50" alt="...">
+                    <img src="./multimedia/Comida Mexicana.png" class="d-block img-fluid" alt="...">
                 </div>
             </div>
 
@@ -122,7 +128,7 @@ nav #home {
             <div class="row">
                 <!-- Logo -->
                 <div class="col-lg-5 col-sm-4 col-12   logo">
-                    <img src="./multimedia/logo_bitter_fondo_blanco.png" alt="Logo Bitter">
+                    <a href="#"><img src="./multimedia/logo_bitter_fondo_blanco.png" alt="Logo Bitter"></a>
                     <h3>Copyright 2022</h3>
                     <h4>Todos los derechos sobre la marca, imagenes y contenidos estan protegidos. </h4>
                     <h4>All right Reserved</h4>
@@ -130,16 +136,16 @@ nav #home {
         
                 <!-- Redes Sociales -->
                 <div class="col-lg-3 col-sm-4 col-12 p-5 g-sm-1  g-md-2 g-lg-3  redes-sociales" >
-                    <img src="./multimedia/Icono Facebook.png" alt="Icono Facebook">
-                    <img src="./multimedia/Icono Instagram.png" alt="Icono Instagram">
-                    <img src="./multimedia/Icono Twiter.png" alt="Icono Twiter">
+                    <a href="https://www.facebook.com/"><img src="./multimedia/Icono Facebook.png" alt="Icono Facebook"></a>
+                    <a href="https://www.instagram.com/bitter_sour/"><img src="./multimedia/Icono Instagram.png" alt="Icono Instagram"></a>
+                    <a href="https://twitter.com/"><img src="./multimedia/Icono Twiter.png" alt="Icono Twiter"></a>
                 </div>
         
                 <!-- Avisos legal -->
-                <div class="col-lg-4 col-sm-4 col-12   legal" >
-                    <h5> Avisos de Privacidad</h5>
-                    <h5> Politica de Cookies</h5>       
-                    <h5> Aviso legal</h5>
+                <div class="col-lg-4 col-sm-4 col-12   legal" >/a>
+                    <a href="#"><h5> Avisos de Privacidad</h5>
+                    <a href="#"><h5> Politica de Cookies</h5> </a>      
+                    <a href="#"><h5> Aviso legal</h5></a>
                 </div>
 
             </div>
