@@ -31,9 +31,7 @@ list-style-type: none;
 /* HEADER */
 header {
     height: 175px;
-    width: 100vw;
-    /* position: sticky; */
-    top: 0px;
+    width: 100%;
     border-top: 10px solid #045e2d;;
     border-bottom: 10px solid #045e2d;
     background-color:#191919;
@@ -125,73 +123,66 @@ main {
 
 /* ................................. FOOTER ...................... */
 footer {
-    height: 180px;
-    width: 100vw;
-}
-
-.footer-contenedor {
+    background-color:#191919;
     border-top: 10px solid #045e2d;;
     border-bottom: 10px solid #045e2d;
-    background-color:#191919;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: flex-start;
-    align-content: center;
 }
 
 footer .logo {
-    margin: 5px;
-    border-right: 1px dotted white;
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: flex-start;
-    align-content: flex-start;
-    
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 footer .redes-sociales {
-    margin: 5px;
-    border-right: 1px dotted white;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
     column-gap: 15px;
     align-items: center;
 }
 
 footer .legal {
     display: flex;
-    flex-direction: column;
+    flex-flow: column nowrap;
     justify-content: space-around;
+    align-content: center;
     align-items: center;
     color: #fc5b6b;
-    font-size: 1rem;
+    font-size: 0.5rem;
 }
 
 footer .logo img {
-    height: 80px;
-    width: 80px;
-    padding: 5px;
+    height: 40px;
+    width: 40px;
+    margin-top: 10px;
 }
 
 footer .redes-sociales img {
-    height: 60px;
-    width: 60px;
-    padding: 5px;
+    height: 35px;
+    width: 35px;
 }
 
-footer .logo h3{
-    font-size: 1.2rem;
+footer h3{
+    font-size: 1.0rem;
+    color:#fc5b6b;
+    padding: 5px;
+    font-style: italic;
+}
+
+footer h4{
+    font-size: 0.7rem;
     color:#fc5b6b;
     padding: 5px;
 }
 
-footer .logo h4{
-    font-size: 0.9rem;
-    color:#fc5b6b;
-    padding: 5px;
+footer h5 {
+    font-size: 0.7rem;
+    font-style: italic;
 }
-
 
 
 
