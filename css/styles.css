@@ -182,6 +182,11 @@ main .propia-main{
         color:white;
         font-size: 2.0rem;
     }
+
+    .publi-recetas{
+        align-self: center;
+    }
+
 }
     
 @media screen and (min-width: 481px) and (max-width: 950px) {
@@ -204,50 +209,38 @@ main .propia-main{
             color:white;
             font-size: 2.3rem;
         }
+
+        main .publi-recetas img {
+            align-self: center;
+        }
 }
-
-
 
 /* ................................................ MAIN  RECETAS ........................... */
 
-main {
-    background-color: #f16317;
-}
-
-.publi-recetas img {
-    border-radius: 20px;
-    width: 100%;
-    height: 100%;
-}
-
-.receta-1 img, .receta-2 img, .receta-3 img , .receta-4 img, .receta-5 img, .receta-6 img {
-    width: 90%;
-    height: 70%;
-}
-
-
 main .recetas button {
-    background-color: #fc051d;
+    background-color: #045e2d;
     color: white;
     font-size: 1.2rem;
     padding: 10px 10px;
     text-decoration: none;
+    border-radius: 10px;
 }
 
-main .recetas {
 
+
+main .recetas {
     display: grid;
-    padding-left: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
     padding-bottom: 30px;
     gap: 15px;
-    grid-template-columns: 3fr 5fr 5fr;
-    grid-template-rows: 100px 400px 400px 400px 100px;
+    grid-template-columns: 4fr 4fr 4fr;
+    grid-template-rows: 100px 400px 400px 400px ;
     grid-template-areas: 
     "texto          texto        texto"
     "publi          receta-1     receta-2" 
     "publi          receta-3     receta-4" 
-    "publi          receta-5     receta-6" 
-    "text-rec       text-rec     text-rec";
+    "publi          receta-5     receta-6" ;
 }
 
 .texto-recetas{
@@ -282,11 +275,88 @@ main .recetas {
     grid-area: receta-6 ;
 }
 
-.texto-pie-recetas {
-    grid-area: text-rec;
+.receta-1 img, .receta-2 img, .receta-3 img, .receta-4 img, .receta-5 img, .receta-6 img {
+    display: block;
+    border-radius: 10px;
+    text-align: center;
+    align-content: center;
+    height: 60%;
+    width: 100%;
+    margin: auto;
+}
+
+main.publi-recetas img {
+    display: block;
+    border-radius: 10px;
+    text-align: center;
+    align-content: center;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+}
+
+main .recetas h1 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color:white;
+    font-size: 2.5rem;
+    text-align: center;
 }
 
 
+@media screen and (max-width:480px) {
+    main .recetas {
+        display: grid;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-bottom: 30px;
+        gap: 25px;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 100px 350px 350px 350px 800px 350px 350px 350px ;
+        grid-template-areas: 
+        "texto"
+        "receta-1"
+        "receta-2"
+        "receta-3"
+        "publi"
+        "receta-4"
+        "receta-5"
+        "receta-6"
+    }
+
+    main .recetas h1 {
+        padding-top: 20px;
+        padding-bottom: 60px;
+        color:white;
+        font-size: 1.5rem;
+    }
+
+    
+}
+
+@media screen and (min-width: 481px) and (max-width: 950px) {
+    main .recetas {
+        display: grid;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 30px;
+        gap: 15px;
+        grid-template-columns: 5fr 5fr ;
+        grid-template-rows: 150px 500px 500px 500px 500px ;
+        grid-template-areas: 
+        "texto          texto"
+        "publi          receta-1" 
+        "publi          receta-2" 
+        "receta-3       receta-4" 
+        "receta-5       receta-6";
+    }
+    main .recetas h1 {
+        padding-top: 25px;
+        padding-bottom: 40px;
+        color:white;
+        font-size: 2.3rem;
+    }
+}
 
 
 
