@@ -14,16 +14,6 @@
 <!-- ......................................... CSS Propio  .............................................-->
     <link rel="stylesheet" href="./css/styles.css">
 
-<!-- ..........................................   CSS Nav Bar   ........................................-->
-    <style>
-nav #home {
-    color: hwb(86 21% 4%);
-    text-transform: uppercase;
-    font-size: 1.2rem;
-    font-weight: bold;
-}
-    </style>
-
 </head>
 
 <!--............................................   BODY ...............................................-->
@@ -45,8 +35,8 @@ nav #home {
                         <li>
                             <a href="#"><img src="./multimedia/WhatsApp_icon.png" width="30"></a>
                             <ul><a href="#" id="home">Inicio</a></ul>
-                            <ul><a href="./pages/nosotros.html" >Nosotros</a></ul>
-                            <ul><a href="./pages/contactos.html" >Contactos</a></ul>
+                            <ul><a href="./pages/nosotros.html">Nosotros</a></ul>
+                            <ul><a href="./pages/contactos.html">Contactos</a></ul>
                             <ul><a href="./pages/recetas.html" >Recetas</a></ul>
                             <ul><a href="./pages/ventas.html" >Ventas</a></ul>
                         </li>
@@ -55,69 +45,66 @@ nav #home {
         </div>
     </header>
 
-
-
-
-
-
-
-
     <!-- ......................................... MAIN .............................................. -->
     <main>
-
-        <div class="main-leyenda">
-            <h1>Te invitamos a conocer un poco de nuestra gastronomia... Tenemos gran variadad de los platos de las <br> diferentes culturas del mundo y de la mas fina pasteleria.</h1>
-        </div>
-
-
-        <!-- Carrusel Boostrap -->
-        <div id="carouselExampleIndicators" class="carousel slide">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        <div class="main-index">
+            <div class="texto-main">
+                <h1>Te invitamos a conocer un poco de nuestra gastronomia... Tenemos gran variadad de los platos de las  diferentes culturas del mundo y de la mas fina pasteleria.</h1>
             </div>
-
-            <div class="carousel-inner" >
-                <div class="carousel-item active">
-                    <h2>Pasteleria y Delicatesse</h2>
-                    <img src="./multimedia/Pasteleria y tortas.png" class="d-block img-fluid" alt="Foto de pasteleria ">
-                </div>
             
-                <div class="carousel-item">
-                    <h2>Comida Venezolana - Arepas</h2>
-                    <img src="./multimedia/Comida Venezolana.png" class="d-block img-fluid" alt="...">
+            <!-- Carrusel Boostrap -->
+            <div id="carouselExampleIndicators" class="carousel slide carrusel-bootstrap">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
                 </div>
 
-                <div class="carousel-item">
-                    <h2>Comida Venezolana... Se te Antoja unos Ricos Tequeños...?</h2>
-                    <img src="./multimedia/2 Comida Venezolana.png" class="d-block img-fluid" alt="...">
+                <div class="carousel-inner contenido-carrusel">
+                    <div class="carousel-item active">
+                        <h2>Pasteleria y Delicatesse</h2>
+                        <img src="./multimedia/Pasteleria y tortas.png" class="d-block img-fluid" alt="Foto de pasteleria ">
+                    </div>
+                
+                    <div class="carousel-item">
+                        <h2>Comida Venezolana - Arepas</h2>
+                        <img src="./multimedia/Comida Venezolana.png" class="d-block img-fluid" alt="...">
+                    </div>
+
+                    <div class="carousel-item">
+                        <h2>Comida Venezolana... Se te Antoja unos Ricos Tequeños...?</h2>
+                        <img src="./multimedia/2 Comida Venezolana.png" class="d-block img-fluid" alt="...">
+                    </div>
+
+                    <div class="carousel-item">
+                        <h2>Comida Asiatica... Por que no Pruebas un Rico Pollo Agridulce...?</h2>
+                        <img src="./multimedia/Comida asiatica.png" class="d-block img-fluid" alt="...">
+                    </div>
+
+                    <div class="carousel-item">
+                        <h2>Comida Mexicana... Y si Intentamos unos Picantes Tacos...?</h2>
+                        <img src="./multimedia/Comida Mexicana.png" class="d-block img-fluid" alt="...">
+                    </div>
                 </div>
 
-                <div class="carousel-item">
-                    <h2>Comida Asiatica... Por que no Pruebas un Rico Pollo Agridulce...?</h2>
-                    <img src="./multimedia/Comida asiatica.png" class="d-block img-fluid" alt="...">
-                </div>
-
-                <div class="carousel-item">
-                    <h2>Comida Mexicana... Y si Intentamos unos Picantes Tacos...?</h2>
-                    <img src="./multimedia/Comida Mexicana.png" class="d-block img-fluid" alt="...">
-                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
 
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+            <div class="publicidad">
+                <h2>PUBLICIDAD</h2>
+                <img src="./multimedia/Pedido ya Publicidad.jpg" alt="Publicidad Pedido Ya">
+            </div>
         </div>
 
-        
     </main>
 
 <!-- ........................................................FOOTER................................................. -->

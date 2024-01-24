@@ -27,6 +27,15 @@ font-size: 66.66%;
 list-style-type: none;
 }
 
+/* ............................................ CSS NAV BAR ACTIVE .............................. */
+
+nav #home, nav #nosostros, nav #contactos, nav #recetas, nav #recetas {
+    color: hwb(86 21% 4%);
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
 /* ........................................  HEADER  ............................................ */
 
 header {
@@ -34,6 +43,7 @@ header {
     border-bottom: 10px solid #045e2d;
     background-color:#191919;
     color:#ffffff;
+
 }
 
 header .logo img {
@@ -72,33 +82,211 @@ header h2 {
     font-size: 1.2rem;
 }
 
+/* ............................................. MAIN General  ................................... */
 
+main {
+    background-color:  #f16317 ;
+    padding-bottom: 50px;
+}
 
+main h1 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color:white;
+    font-size: 2.5rem;
+}
 
+main .contenido-carrusel h2 {
+    color:white;
+    text-align: center;
+    font-size: 2rem;
+}
 
-
-
-
-
-
-/* .................................. MAIN ........................ */
 main img{
-    width: 50%;
+    display: block;
     border-radius: 20px;
     text-align: center;
+    width: 85%;
+    height: 80%;
+    margin: auto;
 }
+
+main .publicidad h2 {
+    color:#045e2d;
+    text-align: center;
+    font-size: 2.0rem;
+}
+
+
+/* .............................................  MAIN INDEX ..................................... */
+
+.main-index {
+    display: grid;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 60px;
+    row-gap: 30px;
+    grid-template-columns: 7fr 3fr ;
+    grid-template-rows: 100px 300px;
+    grid-template-areas: 
+    "texto       texto"
+    "carrusel    publicidad";
+}
+
+.texto-main{
+    grid-area: texto;
+}
+
+.carrusel-bootstrap {
+    grid-area: carrusel;  
+}
+
+.publicidad {
+    grid-area: publicidad;
+}
+
+main .propia-main{
+    font-size: 2rem;
+    background-color: #f16317;
+    border: 2px solid white;
+    
+}
+
+.texto-main {
+    padding-top: 5px;
+    color: #e2dede;
+    font-size: 2.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*................................................ MEDIA QUERY INDEX ........................ */
+
+@media screen and (max-width:480px) {
+    .main-index {
+        display: grid;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-bottom: 40px;
+        row-gap: 30px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 150px 300px 300px;
+        grid-template-areas: 
+        "texto"
+        "carrusel"
+        "publicidad";
+    }
+
+    main h1 {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        color:white;
+        font-size: 2.0rem;
+    }
+}
+    
+@media screen and (min-width: 481px) and (max-width: 950px) {
+    .main-index {
+            display: grid;
+            padding-left: 20px;
+            padding-right: 25px;
+            padding-bottom: 25px;
+            row-gap: 30px;
+            grid-template-columns: 2fr 1fr ;
+            grid-template-rows: 100px 350px;
+            grid-template-areas: 
+            "texto       texto"
+            "carrusel    publicidad"
+        }
+
+        main h1 {
+            padding-top: 25px;
+            padding-bottom: 40px;
+            color:white;
+            font-size: 2.3rem;
+        }
+}
+
+
+
+/* ................................................ MAIN  RECETAS ........................... */
 
 main {
     background-color: #f16317;
 }
 
-.main-leyenda {
-    padding-top: 5px;
-    width: 80vw;
-    border: 2px solid black;
-    border-radius: 15px;
-    box-shadow: white;
+.publi-recetas img {
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
 }
+
+.receta-1 img, .receta-2 img, .receta-3 img , .receta-4 img, .receta-5 img, .receta-6 img {
+    width: 90%;
+    height: 70%;
+}
+
+
+main .recetas button {
+    background-color: #fc051d;
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px 10px;
+    text-decoration: none;
+}
+
+main .recetas {
+
+    display: grid;
+    padding-left: 25px;
+    padding-bottom: 30px;
+    gap: 15px;
+    grid-template-columns: 3fr 5fr 5fr;
+    grid-template-rows: 100px 400px 400px 400px 100px;
+    grid-template-areas: 
+    "texto          texto        texto"
+    "publi          receta-1     receta-2" 
+    "publi          receta-3     receta-4" 
+    "publi          receta-5     receta-6" 
+    "text-rec       text-rec     text-rec";
+}
+
+.texto-recetas{
+    grid-area: texto;
+}
+
+.publi-recetas {
+    grid-area: publi;
+}
+
+.receta-1 {
+    grid-area: receta-1 ;
+}
+
+.receta-2 {
+    grid-area: receta-2 ;
+}
+
+.receta-3 {
+    grid-area: receta-3 ;
+}
+
+.receta-4 {
+    grid-area: receta-4 ;
+}
+
+.receta-5 {
+    grid-area: receta-5 ;
+}
+
+.receta-6 {
+    grid-area: receta-6 ;
+}
+
+.texto-pie-recetas {
+    grid-area: text-rec;
+}
+
+
 
 
 
