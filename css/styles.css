@@ -82,7 +82,7 @@ header h2 {
     font-size: 1.2rem;
 }
 
-/* ............................................. MAIN General  ................................... */
+/* ............................................. MAIN GENERAL  ................................... */
 
 main {
     background-color:  #f16317 ;
@@ -127,7 +127,7 @@ main .publicidad h2 {
     padding-bottom: 60px;
     row-gap: 30px;
     grid-template-columns: 7fr 3fr ;
-    grid-template-rows: 100px 300px;
+    grid-template-rows: 100px 450px;
     grid-template-areas: 
     "texto       texto"
     "carrusel    publicidad";
@@ -357,11 +357,6 @@ main .recetas h1 {
         font-size: 2.3rem;
     }
 }
-
-
-
-
-
 
 
 /* ................................. FOOTER ...................... */
