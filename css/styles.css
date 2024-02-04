@@ -13,9 +13,14 @@ Verde  Claro		#12663e
 Verde Oscuro		#045e2d
 Gris Claro		    #e2dede */
 
-/* Google Font:
-Londrina Solid		https://fonts.google.com/specimen/Londrina+Solid
-Mulish			    https://fonts.google.com/specimen/Mulish */
+/* ............................................ > Google <font ................................... */
+
+/* Londrina */
+/* font-family: 'Londrina Solid', sans-serif */
+
+/* Mulish */
+/* font-family: 'Mulish', sans-serif; */
+
 
 /* ........................................  RESET CSS  ....................................... */
 * {
@@ -23,13 +28,13 @@ margin: 0;
 padding: 0;
 box-sizing: border-box;
 text-decoration: none;
-font-size: 66.66%;
+font-size: 62.5%;
 list-style-type: none;
 }
 
 /* ............................................ CSS NAV BAR ACTIVE .............................. */
 
-nav #home, nav #nosostros, nav #contactos, nav #recetas, nav #recetas {
+nav #home, nav #nosotros, nav #contactos, nav #recetas, nav #ventas {
     color: hwb(86 21% 4%);
     text-transform: uppercase;
     font-size: 1.2rem;
@@ -49,7 +54,7 @@ header {
 header .logo img {
     width: 80px;
     height: 80px;
-    padding-top:10px ;
+    padding-top:10px;
 }
 
 header nav li {
@@ -75,12 +80,13 @@ header nav a:hover {
 
 header h1 {
     text-shadow: 3px 3px 2px rgba(255,187,66,0.6);
-    font-size: 2.5rem;
+    font-size: 3.0rem;
 }
 
 header h2 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
+
 
 /* ............................................. MAIN GENERAL  ................................... */
 
@@ -89,32 +95,29 @@ main {
     padding-bottom: 50px;
 }
 
+main h1, main h2 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: 'Londrina Solid', sans-serif;
+    color: #e2dede;
+}
+
 main h1 {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    color:white;
+    font-size: 3.5rem;
+}
+
+main h2 {
+
     font-size: 2.5rem;
 }
 
-main .contenido-carrusel h2 {
-    color:white;
-    text-align: center;
-    font-size: 2rem;
-}
-
-main img{
-    display: block;
-    border-radius: 20px;
-    text-align: center;
+main img {
+    border: 2.0px solid #440a08;
+    box-shadow: 2px 2px 2px 1px rgba(0,0,0,0.75);
+    border-radius: 15px;
     width: 85%;
-    height: 80%;
+    height: 85%;
     margin: auto;
-}
-
-main .publicidad h2 {
-    color:#045e2d;
-    text-align: center;
-    font-size: 2.0rem;
 }
 
 
@@ -122,118 +125,373 @@ main .publicidad h2 {
 
 .main-index {
     display: grid;
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-bottom: 60px;
-    row-gap: 30px;
-    grid-template-columns: 7fr 3fr ;
-    grid-template-rows: 100px 450px;
+    gap: 10px;
+    margin: 10px;
+    align-content: center;
+    grid-template-columns:  3fr 1fr;
+    grid-template-rows: 150px 500px ;
     grid-template-areas: 
-    "texto       texto"
-    "carrusel    publicidad";
+    "txt       txt"
+    "carrusel   publi";
 }
+ 
 
-.texto-main{
-    grid-area: texto;
+.texto-main {
+    grid-area: txt;
+    text-align: center;
 }
 
 .carrusel-bootstrap {
-    grid-area: carrusel;  
+    grid-area: carrusel; 
+    text-align: center;
 }
 
 .publicidad {
-    grid-area: publicidad;
+    grid-area: publi;
+    text-align: center;
 }
 
-main .propia-main{
-    font-size: 2rem;
-    background-color: #f16317;
-    border: 2px solid white;
-    
+.main-index img {
+    width: 75%;
+    height: 85%;
+    align-content: center;
 }
 
-.texto-main {
-    padding-top: 5px;
-    color: #e2dede;
-    font-size: 2.5rem;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.main-index  h2 {
+    background-color: #191919;
+    Border: 2px solid white;
+    box-shadow: 2px 2px 1px 1px rgba(255,255,255,0.75);
+    padding: 5px;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+    justify-self: center;
+}
+
+.main-index .publicidad {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
 }
 
 /*................................................ MEDIA QUERY INDEX ........................ */
 
+/* Media Query Smartphones */
+
 @media screen and (max-width:480px) {
     .main-index {
         display: grid;
-        padding-left: 25px;
-        padding-right: 25px;
-        padding-bottom: 40px;
-        row-gap: 30px;
         grid-template-columns: 1fr;
-        grid-template-rows: 150px 300px 300px;
+        grid-template-rows: 150px 300px 450px;
         grid-template-areas: 
-        "texto"
+        "txt"
         "carrusel"
-        "publicidad";
+        "publi";
     }
 
-    main h1 {
+    .main-index h1 {
         padding-top: 30px;
         padding-bottom: 30px;
-        color:white;
         font-size: 2.0rem;
     }
 
-    .publi-recetas{
-        align-self: center;
+    .main-index  .publicidad {
+        display:block;
+    }
+
+    .main-index .publicidad img {
+        width: 65%;
     }
 
 }
-    
+
+
+/* Media Query Tablets */
+
 @media screen and (min-width: 481px) and (max-width: 950px) {
     .main-index {
             display: grid;
-            padding-left: 20px;
-            padding-right: 25px;
-            padding-bottom: 25px;
-            row-gap: 30px;
-            grid-template-columns: 2fr 1fr ;
+            grid-template-columns: 3fr 1fr ;
             grid-template-rows: 100px 350px;
             grid-template-areas: 
-            "texto       texto"
-            "carrusel    publicidad"
+            "txt       txt"
+            "carrusel    publi"
         }
 
         main h1 {
             padding-top: 25px;
             padding-bottom: 40px;
+            font-family: 'Londrina Solid', sans-serif;
             color:white;
             font-size: 2.3rem;
         }
 
-        main .publi-recetas img {
-            align-self: center;
+        .main-index  .publicidad {
+            display:block;
         }
+    
+        .main-index .publicidad img {
+            width: 100%;
+        }
+
+        .main-index img {
+            width: 90%;
+        }
+
+}
+
+/* ............................................... MAIN  NOSOTROS ...................................... */
+
+main .nosotros {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 500px 450px;
+    grid-template-areas: 
+    "txt           txt"
+    "n-team        publi"
+    "n-emprend     frase";
+
+    gap: 10px;
+
+}
+
+.texto-nosotros{
+    grid-area: txt;
+    text-align: center;
+}
+
+.our-team {
+    grid-area: n-team;
+    display: block;
+    text-align: center;
+}
+
+.publicidad {
+    grid-area: publi ;
+    text-align: center;
+}
+
+.our-company {
+    grid-area: n-emprend ;
+    display: block;
+    text-align: center;
+    background-color: #440a08;
+
+}
+
+.frase-pict {
+    grid-area: frase ;
+    background-color: black;
+}
+
+main .nosotros h1 {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-family: 'Londrina Solid', sans-serif;
+    color:#e2dede;
+    text-align: center;
+}
+
+
+/* ...................................... MEDIA QUERY - NOSOTROS .............................*/
+
+/* Media Query Smartphones */
+
+@media screen and (max-width:480px) {
+    main .nosotros {
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 120px 320px 320px 320px 320px;
+        grid-template-areas: 
+        "txt"
+        "n-team" 
+        "publi"
+        "n-emprend"
+        "frase";
+    
+    }
+
+    .nosotros h1 {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 3.2rem;
+    }
+
+    .nosotros div {
+        text-align: center;
+    }
+}
+
+/* Media Query Tablets */
+
+@media screen and (min-width: 481px) and (max-width: 950px) {
+    main .nosotros {
+        display: grid;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 20px;
+        gap: 15px;
+        grid-template-columns: 3fr 2fr ;
+        grid-template-rows: 150px 280px 280px ;
+        grid-template-areas: 
+        "txt          txt"
+        "n-team       publi" 
+        "n-emprend    frase";
+    }
+
+    main .nosotros h1 {
+        padding-top: 30px;
+        padding-bottom: 10px;
+        font-family: 'Londrina Solid', sans-serif;
+        color:#e2dede;
+        font-size: 4.0rem;
+        text-align: center;
+        }
+    }
+
+    main .nosotros .img {
+        display: block;
+        align-content: center;
+        text-align: center;
+        width: 100%;
+    }
+
+
+    /*  ................................................ MAIN  CONTACTOS ................................... */
+
+    main .contactos {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 3fr 2fr;
+        grid-template-rows: 100px 450px 500px;
+        grid-template-areas: 
+        "texto          texto"
+        "our-team       mapa" 
+        "redes          redes" ;
+    }
+    
+    .texto-contactos {
+        grid-area: texto;
+        text-align: center;
+    }
+    
+    .our-team {
+        grid-area: our-team;
+        text-align: center;
+    }
+
+    .mapa {
+        grid-area: mapa ;
+        text-align: center;
+    }
+    
+    .redes-sociales {
+        grid-area: redes ;
+        text-align: center;
+        padding-top: 30px;
+    }
+
+    main .contactos .redes-sociales img {
+        width: 55%;
+    }
+
+    main .mapa iframe {
+        border-radius: 20px;
+        box-shadow: 5px 5px 5px 3px rgba(0, 0, 0, 0.47);
+        width: 90%;
+        height: 380px;
+    }
+
+    main .contactos h1 {
+        text-align: center;
+        padding-bottom: 15px;
+        font-size: 4.0rem;
+    }
+
+    main .contactos h2 {
+        text-align: center;
+        padding-bottom: 15px;
+        font-size: 3.0rem;
+    }
+    
+/* .............................................. MEDIA QUERY CONTACTOS .................................... */
+
+/* Media Query Smartphones */
+
+@media screen and (max-width:480px) {
+    main .contactos {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 300px 300px 300px;
+        grid-template-areas: 
+        "texto"
+        "our-team"
+        "mapa" 
+        "redes" ;
+    }
+
+    main .contactos h1 {
+        text-align: center;
+        padding: 10px;
+        font-size: 3.0rem;
+    }
+
+    main .contactos h2 {
+        text-align: center;
+        padding-bottom: 15px;
+        font-size: 2.5rem;
+    }
+
+    main .mapa iframe {
+        border-radius: 10px;
+        box-shadow: 3px 3px 2px 2px rgba(0, 0, 0, 0.47);
+        width: 80%;
+        height: 250px;
+    }
+
+    main .contactos .redes-sociales img {
+        width: 85%;
+    }
+}
+
+/* Media Query Tablets */
+
+@media screen and (min-width: 481px) and (max-width: 950px) {
+    main .contactos {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 3fr 2fr;
+        grid-template-rows: 100px 280px 400px ;
+        grid-template-areas: 
+        "texto  texto"
+        "our-team   mapa"
+        "redes  redes" ;
+    }
+
+    main .contactos h1 {
+        font-size: 2.8rem;
+    }
+
+    main .contactos h2 {
+        font-size: 2.5rem;
+    }
+
+    main .mapa iframe {
+        border-radius: 10px;
+        box-shadow: 3px 3px 2px 2px rgba(0, 0, 0, 0.47);
+        width: 80%;
+        height: 220px;
+    }
 }
 
 /* ................................................ MAIN  RECETAS ........................... */
 
-main .recetas button {
-    background-color: #045e2d;
-    color: white;
-    font-size: 1.2rem;
-    padding: 10px 10px;
-    text-decoration: none;
-    border-radius: 10px;
-}
-
-
-
 main .recetas {
     display: grid;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 30px;
-    gap: 15px;
+    gap: 25px;
     grid-template-columns: 4fr 4fr 4fr;
     grid-template-rows: 100px 400px 400px 400px ;
     grid-template-areas: 
@@ -275,34 +533,68 @@ main .recetas {
     grid-area: receta-6 ;
 }
 
-.receta-1 img, .receta-2 img, .receta-3 img, .receta-4 img, .receta-5 img, .receta-6 img {
-    display: block;
-    border-radius: 10px;
-    text-align: center;
-    align-content: center;
-    height: 60%;
+.receta-1 , .receta-2 , .receta-3 , .receta-4 , .receta-5 , .receta-6  {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
     width: 100%;
-    margin: auto;
+    height: 75%;
+ 
 }
 
-main.publi-recetas img {
+.recetas .texto-recetas h1 {
+    padding: 10px;
+    font-size: 3.0rem;
+    padding-bottom: 10px;
+    text-align: center;
+}
+    
+main .recetas h2 {
+    text-align: center;
+    margin-top: 0px;
+    padding: 5px  0px 5px 35px;
+}
+
+main .recetas h3 {
+    text-align:justify;
+    padding: 10px 30px 5px 30px;
+    font-size: 1.5rem;
+}
+
+main .recetas button {
+    background-color: #045e2d;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.8rem;
+    padding: 5px 10px;
+    text-decoration: none;
+    margin-left: 30px;
+    margin-bottom: 30px;
+
+}
+
+main .recetas button:hover {
+    background-color: #b4c000;
+    border: 2px solid black;
+    color: #191919;
+    font-weight: 600;
+}
+
+main .publi-recetas img {
     display: block;
     border-radius: 10px;
+    box-shadow: 1px 1px 3px 2px rgba(255,255,255,0.75);
     text-align: center;
     align-content: center;
     height: 100%;
-    width: 100%;
+    width: 85%;
     margin: auto;
 }
 
-main .recetas h1 {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    color:white;
-    font-size: 2.5rem;
-    text-align: center;
-}
+/*  .................................................MEDIA QUERY RECETAS .......................... */
 
+/* Media Query Smartphones */
 
 @media screen and (max-width:480px) {
     main .recetas {
@@ -310,9 +602,9 @@ main .recetas h1 {
         padding-left: 5px;
         padding-right: 5px;
         padding-bottom: 30px;
-        gap: 25px;
+        gap: 5px;
         grid-template-columns: 1fr ;
-        grid-template-rows: 100px 350px 350px 350px 800px 350px 350px 350px ;
+        grid-template-rows: 100px 400px 400px 400px 800px 400px 400px 400px ;
         grid-template-areas: 
         "texto"
         "receta-1"
@@ -324,15 +616,41 @@ main .recetas h1 {
         "receta-6"
     }
 
-    main .recetas h1 {
-        padding-top: 20px;
-        padding-bottom: 60px;
-        color:white;
+    .recetas .texto-recetas h1 {
+        padding: 10px;
+        font-size: 2.0rem;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+
+    main .recetas h2 {
+        text-align: center;
+        margin-top: 0px;
+        padding: 5px  0px 5px 35px;
+        font-size: 1.5rem;
+    }
+    
+    main .recetas h3 {
+        text-align:justify;
+        padding: 10px 30px 5px 30px;
         font-size: 1.5rem;
     }
 
-    
+    main .publi-recetas img {
+        display: block;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        border-radius: 5px;
+        box-shadow: 1px 1px 3px 2px rgba(255,255,255,0.75);
+        text-align: center; 
+        align-content: center;
+        width: 85%;
+        height: 650px;
+        
+    }
 }
+
+/* Media  Query Tablets */
 
 @media screen and (min-width: 481px) and (max-width: 950px) {
     main .recetas {
@@ -341,7 +659,7 @@ main .recetas h1 {
         padding-right: 15px;
         padding-bottom: 30px;
         gap: 15px;
-        grid-template-columns: 5fr 5fr ;
+        grid-template-columns: 1fr 1fr ;
         grid-template-rows: 150px 500px 500px 500px 500px ;
         grid-template-areas: 
         "texto          texto"
@@ -352,14 +670,147 @@ main .recetas h1 {
     }
     main .recetas h1 {
         padding-top: 25px;
-        padding-bottom: 40px;
+        padding-bottom: 15px;
         color:white;
         font-size: 2.3rem;
+    }
+
+    main .publi-recetas img {
+        display: block;
+        border-radius: 5px;
+        box-shadow: 1px 1px 3px 2px rgba(255,255,255,0.75);
+        text-align: center; 
+        align-content: center;
+        width: 100%;
+        height: 750px;
+    }
+
+    main .publi-recetas {
+        padding-top: 40px;
     }
 }
 
 
-/* ................................. FOOTER ...................... */
+/* ................................................................ MAIN VENTAS ............................................. */
+
+main .ventas {
+    display: grid;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 30px;
+    gap: 40px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 500px 500px 500px;
+    grid-template-areas: 
+    "texto          texto         texto"
+    "banner-1      banner-1    publi-1"
+    "pict-texto     banner-2      banner-2" 
+    "banner-3       banner-3      publi-2";
+}
+
+.texto-ventas {
+    grid-area: texto;
+    text-align: center;
+}
+
+.banner-1 {
+    grid-area: banner-1;
+    display: block;
+    text-align: center;
+}
+
+.publicidad-1 {
+    grid-area: publi-1;
+    display: block;
+    text-align: center;
+}
+
+.pict-texto {
+    grid-area: pict-texto ;
+    display: block;
+    text-align: center;
+}
+
+.banner-2 {
+    grid-area: banner-2 ;
+    display: block;
+    text-align: center;
+}
+
+.banner-3 {
+    grid-area: banner-3 ;
+    display: block;
+    text-align: center;
+}
+
+.publicidad-2 {
+    grid-area: publi-2 ;
+    display: block;
+    text-align: center;
+}
+
+main .ventas .banner-1, main .ventas .banner-2, main .ventas .banner-3 {
+    width: 100%;
+}
+
+main .ventas h1, main .ventas h2 {
+    text-align: center;
+    padding-left: 60px;
+    padding-bottom: 0;
+}
+
+.pict-texto img {
+    background-color: #b4c000;
+    border-radius: 15px;
+    width: 100%;
+    height: 85%;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+/*  .................................................MEDIA QUERY VENTAS .......................... */
+
+/* Media Query Smartphones */
+
+@media screen and (max-width:480px) {
+    main .ventas {
+        display: grid;
+        /* padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 30px; */
+        gap: 40px;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 80px 400px 400px 400px;
+        grid-template-areas: 
+        "texto"
+        "banner-1"
+        "publi-1"
+        "pict-texto"
+        "banner-2" 
+        "banner-3"
+        "publi-2";
+    }
+
+    .texto-ventas {
+        grid-area: texto;
+        text-align: center;
+        font-size: 2.5rem;
+    }
+
+    main .ventas h2 {
+        font-size: 2.0rem;
+    }
+
+    .pict-texto {
+        display: block;
+        text-align: center;
+        width: 85%;
+    }
+}
+
+
+/* ............................................................... FOOTER ......................................... */
+
 footer {
     background-color:#191919;
     border-top: 10px solid #045e2d;;
@@ -438,24 +889,6 @@ footer h5 {
     font-size: 1rem;
     font-style: italic;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
