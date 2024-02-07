@@ -1,0 +1,49 @@
+/* ............................................... MAIN  NOSOTROS ...................................... */
+
+main{
+    .nosotros {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100px 500px 450px;
+        grid-template-areas: 
+        "txt           txt"
+        "n-team        publi"
+        "n-emprend     frase";
+        gap: 10px;    
+    }
+
+    .texto-nosotros{
+        grid-area: txt;
+        text-align: center;
+        h1 {
+            padding-top: 20px;
+            padding-bottom: 10px;
+            font-family: $font_londrina;
+            color:$grisClaro;
+            text-align: center;
+        }
+    }
+
+    .our-team {
+        grid-area: n-team;
+        display: block;
+        text-align: center;
+    }
+
+    .publicidad {
+        grid-area: publi ;
+        text-align: center;
+    }
+
+    .our-company {
+        grid-area: n-emprend ;
+        display: block;
+        text-align: center;
+        background-color: $marronBitter;
+    }
+
+    .frase-pict {
+        grid-area: frase ;
+        background-color: $negroEnvejecido;
+    }
+}

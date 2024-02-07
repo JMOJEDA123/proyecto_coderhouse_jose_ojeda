@@ -1,0 +1,105 @@
+/* ................................................ MAIN  RECETAS ........................... */
+
+main {
+    .recetas {
+        display: grid;
+        gap: 25px;
+        grid-template-columns: 4fr 4fr 4fr;
+        grid-template-rows: 100px 400px 400px 400px ;
+        grid-template-areas: 
+        "texto          texto        texto"
+        "publi          receta-1     receta-2" 
+        "publi          receta-3     receta-4" 
+        "publi          receta-5     receta-6" ;
+
+        h1 {
+            padding: 10px;
+            font-size: 3.0rem;
+            padding-bottom: 10px;
+            text-align: center;
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 0px;
+            padding: 5px  0px 5px 35px;
+        }
+
+        h3 {
+            text-align:justify;
+            padding: 10px 30px 5px 30px;
+            font-size: 1.5rem;
+        }
+
+        button {
+            background-color: $verdeOscuro;
+            border-radius: 10px;
+            color: $blanco;
+            font-size: 1.8rem;
+            padding: 5px 10px;
+            text-decoration: none;
+            margin-left: 30px;
+            margin-bottom: 30px;
+
+            &:hover {
+                background-color: $verdeOliva;
+                border: 2px solid $negroEnvejecido;
+                color: $negroEnvejecido;
+                font-weight: 600;
+            }
+        }
+
+        .texto-recetas{
+            grid-area: texto;
+            @include centrar-bloque;
+
+            
+        }
+
+        .publi-recetas {
+            grid-area: publi;
+            @include centrar-bloque;
+
+            img {
+                display: block;
+                border-radius: 10px;
+                box-shadow: 1px 1px 3px 2px rgba(255,255,255,0.75);
+                text-align: center;
+                align-content: center;
+                height: 100%;
+                width: 85%;
+                margin: auto;
+            }
+        }
+        
+        .receta-1 {
+            grid-area: receta-1 ;
+            @include centrar-bloque
+        }
+        
+        .receta-2 {
+            grid-area: receta-2 ;
+            @include centrar-bloque
+        }
+        
+        .receta-3 {
+            grid-area: receta-3 ;
+            @include centrar-bloque
+        }
+        
+        .receta-4 {
+            grid-area: receta-4 ;
+            @include centrar-bloque
+        }
+        
+        .receta-5 {
+            grid-area: receta-5 ;
+            @include centrar-bloque
+        }
+        
+        .receta-6 {
+            grid-area: receta-6 ;
+            @include centrar-bloque
+        }
+    }
+}

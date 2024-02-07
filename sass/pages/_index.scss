@@ -1,0 +1,59 @@
+main {
+    .main-index {
+        display: grid;
+        gap: 10px;
+        align-content: center;
+        grid-template-columns:  3fr 1fr;
+        grid-template-rows: 150px 550px ;
+        grid-template-areas: 
+        "txt       txt"
+        "carrusel   publi";
+
+        .texto-main {
+            grid-area: txt;
+            text-align: center;
+        }
+
+        .carrusel-bootstrap {
+            grid-area: carrusel; 
+            text-align: center;
+
+            img {
+                width: 75%;
+                height: 85%;
+                align-content: center;
+            }
+
+            h2 {
+                background-color: #191919;
+                Border: 2px solid white;
+                box-shadow: 2px 2px 1px 1px rgba(255,255,255,0.75);
+                padding: 5px;
+                margin-bottom: 20px;
+                width: 100%;
+                text-align: center;
+                justify-self: center;
+            }
+
+        }
+
+        .publicidad {
+            grid-area: publi;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: center;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+

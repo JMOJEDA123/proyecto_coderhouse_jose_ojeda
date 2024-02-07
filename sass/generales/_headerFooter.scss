@@ -1,0 +1,113 @@
+/*............................................ HEADER...............................................*/
+
+header {
+    border-top: 10px solid $verdeOscuro;
+    border-bottom: 10px solid $verdeOscuro;
+    background-color:$negroEnvejecido;
+    color: $blanco;
+
+    .logo {
+        img {
+            width: 80px;
+            height: 80px;
+            padding-top: 10px;
+        }
+        h1 {
+            text-shadow: 3px 3px 2px rgba(255,187,66,0.6);
+            font-size: 3.0rem;
+        }
+        h2 {
+            font-size: 1.5rem;
+        }
+    }
+
+    nav {
+        li {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: flex-end;
+            align-items: flex-end;
+
+            a {
+                font-size: 1.5rem;
+                color: $rojo ;
+                text-decoration: none;
+
+                &:hover {
+                    font-size: 1.2rem;
+                    color: $verdeOliva ;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+
+/* ....................FOOTER ................*/
+
+footer {
+    background-color:$negroEnvejecido;
+    border-top: 10px solid $verdeOscuro;
+    border-bottom: 10px solid $verdeOscuro;
+    .logo {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        text-align: center;
+        img {
+            height: 40px;
+            width: 40px;
+            margin-top: 10px;
+        }
+        h3{
+            font-size: 1.1rem;
+            color:$rosa;
+            padding: 5px;
+            font-style: italic;
+        }
+        h4{
+            font-size: 0.9rem;
+            color:$rosa;
+            padding: 5px;
+        }
+    }
+
+    .redes-sociales {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        column-gap: 15px;
+        align-items: center;
+        img {
+            height: 35px;
+            width: 35px;
+        }
+    }
+
+    .legal {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-around;
+        align-content: center;
+        align-items: center;
+        a {
+            text-decoration: none;
+            color: $rosa;
+            font-size: 1.2rem;
+
+            &:hover {
+                text-decoration: none;
+                color: $blanco;
+                font-size: 1.5rem;
+            }
+        }
+        h5 {
+            font-size: 1rem;
+            font-style: italic;
+        }
+    }
+}

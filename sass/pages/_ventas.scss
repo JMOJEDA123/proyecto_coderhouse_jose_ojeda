@@ -1,0 +1,83 @@
+/* ........................................ MAIN VENTAS ....................................... */
+
+main {
+    .ventas {
+        display: grid;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 30px;
+        gap: 40px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 100px 500px 500px 500px;
+        grid-template-areas: 
+        "texto          texto         texto"
+        "banner-1      banner-1    publi-1"
+        "pict-texto     banner-2      banner-2" 
+        "banner-3       banner-3      publi-2";
+
+        h1 {
+            text-align: center;
+            padding-left: 60px;
+            padding-bottom: 0;
+        }
+
+        h2 {
+            text-align: center;
+            padding-left: 60px;
+            padding-bottom: 0;
+        }
+
+        .texto-ventas {
+            grid-area: texto;
+            text-align: center;
+        }
+
+        .banner-1 {
+            grid-area: banner-1;
+            display: block;
+            text-align: center;
+            width: 100%;
+        }
+
+        .publicidad-1 {
+            grid-area: publi-1;
+            display: block;
+            text-align: center;
+        }
+
+        .pict-texto {
+            grid-area: pict-texto ;
+            display: block;
+            text-align: center;
+
+            img {
+                background-color: $verdeOliva;
+                border-radius: 15px;
+                width: 100%;
+                height: 85%;
+                margin-left: 60px;
+                margin-right: 60px;
+            }
+        }
+
+        .banner-2 {
+            grid-area: banner-2 ;
+            display: block;
+            text-align: center;
+            width: 100%;
+        }
+
+        .banner-3 {
+            grid-area: banner-3 ;
+            display: block;
+            text-align: center;
+            width: 100%;
+        }
+
+        .publicidad-2 {
+            grid-area: publi-2 ;
+            display: block;
+            text-align: center;
+        }
+    }
+}

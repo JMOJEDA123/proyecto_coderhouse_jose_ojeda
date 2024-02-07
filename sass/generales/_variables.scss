@@ -1,0 +1,35 @@
+/* .............. PALETA DE COLORES ............. */
+
+$naranja:           #fc7800	;
+$rosa:              #fc5b6b;
+$naranjaClaro:		#ffbb42;
+$azulClaro:		    #5bd3d3;
+$negroEnvejecido:	#191919;
+$naranjaBitter:		#f16317;
+$marronBitter:		#440a08;
+$verdeOliva:		#b4c000;
+$verdeClaro:    	#12663e;
+$verdeOscuro:		#045e2d;
+$grisClaro:		    #e2dede;
+$rojo:              #fc051d;
+$blanco:            #ffffff;
+
+/* ......... Google Font ................... */
+
+/* Londrina */
+$font_londrina: 'Londrina Solid', sans-serif;
+
+/* Mulish */
+
+$font_mulish: 'Mulish', sans-serif; 
+
+/*................Mixin ....................*/
+
+@mixin centrar-bloque {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+    width: 100%;
+    height: 75%;
+}

@@ -1,0 +1,73 @@
+
+/*.......................................... Variables .............................*/
+
+@import "generales/variables";
+
+/* ........................................  RESET CSS  ....................................... */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-size: 62.5%;
+    list-style-type: none;
+    }
+    
+    /* ................................ CSS NAV BAR ACTIVE .............................. */
+    
+    nav #home, nav #nosotros, nav #contactos, nav #recetas, nav #ventas {
+        color: $verdeOliva ;
+        text-transform: uppercase;
+        font-size: 1.4rem;
+        font-weight: bold;
+    }
+
+
+/*.......................................... Header / Footer.............................*/
+
+@import "generales/headerFooter";
+
+
+/*.............................MAIN GENERAL .....................*/
+
+main {
+    background-color:  $naranjaBitter ;
+    padding-bottom: 50px;
+    h1 {
+        font-size: 3.5rem;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-family: 'Londrina Solid', sans-serif;
+        color: $grisClaro;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-family: 'Londrina Solid', sans-serif;
+        color: $grisClaro;
+    }
+
+    img {
+        border: 2.0px solid $marronBitter;
+        box-shadow: 2px 2px 2px 1px rgba(0,0,0,0.75);
+        border-radius: 15px;
+        width: 85%;
+        height: 85%;
+        margin: auto;
+    }
+} 
+
+
+/*.......................................... Pages.............................*/
+
+@import "pages/index";
+@import "pages/contactos";
+@import "pages/nosotros";
+@import "pages/recetas";
+@import "pages/ventas";
+
+/*.......................................... Media Query.............................*/
+
+@import "generales/mediaQuery";
