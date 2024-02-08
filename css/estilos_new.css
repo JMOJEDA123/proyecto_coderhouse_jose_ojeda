@@ -127,6 +127,7 @@ footer .legal h5 {
 main {
   background-color: #f16317;
   padding-bottom: 50px;
+  background-image: linear-gradient(to right bottom, #fc7800, #fa7406, #f8700b, #f66c0f, #f46813, #f5720e, #f57c0a, #f58607, #f69f06, #f4b716, #f1ce2c, #ece544);
 }
 main h1 {
   font-size: 3.5rem;
@@ -474,19 +475,29 @@ main .ventas .publicidad-2 {
 /* ...............MEDIA QUERY .........................*/
 /*MEDIA QUERY INDEX*/
 /* Media Query Smartphones */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 480px) {
   .main-index {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 150px 300px 450px;
     grid-template-areas: "txt" "carrusel" "publi";
   }
-  .main-index h1 {
+  .main-index .texto-main {
+    grid-area: txt;
+    text-align: center;
+  }
+  .main-index .texto-main h1 {
     padding-top: 30px;
     padding-bottom: 30px;
     font-size: 2rem;
   }
+  .main-index .carrusel-bootstrap {
+    grid-area: carrusel;
+    text-align: center;
+  }
   .main-index .publicidad {
+    grid-area: publi;
+    text-align: center;
     display: block;
   }
   .main-index .publicidad img {
@@ -691,5 +702,6 @@ main .ventas .publicidad-2 {
 /*MEDIA QUERY VENTAS*/
 /* Media Query Smartphones */
 /* Media Query Tablets */
+/* FIN*/
 
 /*# sourceMappingURL=estilos_new.css.map */

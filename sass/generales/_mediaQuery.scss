@@ -4,7 +4,7 @@
 
 /*MEDIA QUERY INDEX*/
 /* Media Query Smartphones */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 480px) {
     .main-index {
         display: grid;
         grid-template-columns: 1fr;
@@ -14,20 +14,34 @@
         "carrusel"
         "publi";
 
-        h1 {
-            padding-top: 30px;
-            padding-bottom: 30px;
-            font-size: 2.0rem;
+        .texto-main {
+            grid-area: txt;
+            text-align: center;
+
+            h1 {
+                padding-top: 30px;
+                padding-bottom: 30px;
+                font-size: 2.0rem;
+            }
+        }
+
+        .carrusel-bootstrap {
+            grid-area: carrusel; 
+            text-align: center;
         }
 
         .publicidad {
+            grid-area: publi;
+            text-align: center;
             display:block;
+
             img {
                 width: 65%;
             }
         }
     }
 }
+
 
 /* Media Query Tablets */
 @media screen and (min-width: 481px) and (max-width: 950px) {
