@@ -1,11 +1,9 @@
 
 
-/* ...............MEDIA QUERY .........................*/
-
 /*MEDIA QUERY INDEX*/
 /* Media Query Smartphones */
 @media screen and (max-width: 480px) {
-    .main-index {
+    main .main-index {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 150px 300px 450px;
@@ -43,9 +41,12 @@
 }
 
 
+
+/* ...............MEDIA QUERY .........................*/
+
 /* Media Query Tablets */
 @media screen and (min-width: 481px) and (max-width: 950px) {
-    .main-index {
+    main .main-index {
         display: grid;
         grid-template-columns: 3fr 1fr ;
         grid-template-rows: 100px 350px;
@@ -82,7 +83,7 @@
 /*MEDIA QUERY NOSOTROS*/
 /* Media Query Smartphones */
 @media screen and (max-width:480px) {
-    .nosotros {
+    main .nosotros {
         display: grid;
         grid-template-columns: 1fr ;
         grid-template-rows: 120px 320px 320px 320px 320px;
@@ -107,7 +108,7 @@
 
 /* Media Query Tablets */
 @media screen and (min-width: 481px) and (max-width: 950px) {
-    .nosotros {
+    main .nosotros {
         display: grid;
         padding-left: 10px;
         padding-right: 10px;
@@ -146,7 +147,7 @@
 /*MEDIA QUERY RECETAS*/
 /* Media Query Smartphones */
 @media screen and (max-width:480px) {
-    .recetas {
+    main .recetas {
         display: grid;
         padding-left: 5px;
         padding-right: 5px;
@@ -202,7 +203,7 @@
 
 /* Media Query Tablets */
 @media screen and (min-width: 481px) and (max-width: 950px) {
-    .recetas {
+    main .recetas {
         display: grid;
         padding-left: 15px;
         padding-right: 15px;
@@ -244,7 +245,7 @@
 /*MEDIA QUERY CONTACTOS*/
 /* Media Query Smartphones */
 @media screen and (max-width:480px) {
-    .contactos {
+    main .contactos {
         display: grid;
         gap: 10px;
         grid-template-columns: 1fr;
@@ -290,7 +291,7 @@
 
 /* Media Query Tablets */
 @media screen and (min-width: 481px) and (max-width: 950px) {
-    .contactos {
+    main .contactos {
         display: grid;
         gap: 10px;
         grid-template-columns: 3fr 2fr;

@@ -472,84 +472,84 @@ main .ventas .publicidad-2 {
 }
 
 /*.......................................... Media Query.............................*/
-/* ...............MEDIA QUERY .........................*/
 /*MEDIA QUERY INDEX*/
 /* Media Query Smartphones */
 @media screen and (max-width: 480px) {
-  .main-index {
+  main .main-index {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 150px 300px 450px;
     grid-template-areas: "txt" "carrusel" "publi";
   }
-  .main-index .texto-main {
+  main .main-index .texto-main {
     grid-area: txt;
     text-align: center;
   }
-  .main-index .texto-main h1 {
+  main .main-index .texto-main h1 {
     padding-top: 30px;
     padding-bottom: 30px;
     font-size: 2rem;
   }
-  .main-index .carrusel-bootstrap {
+  main .main-index .carrusel-bootstrap {
     grid-area: carrusel;
     text-align: center;
   }
-  .main-index .publicidad {
+  main .main-index .publicidad {
     grid-area: publi;
     text-align: center;
     display: block;
   }
-  .main-index .publicidad img {
+  main .main-index .publicidad img {
     width: 65%;
   }
 }
+/* ...............MEDIA QUERY .........................*/
 /* Media Query Tablets */
 @media screen and (min-width: 481px) and (max-width: 950px) {
-  .main-index {
+  main .main-index {
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 100px 350px;
     grid-template-areas: "txt       txt" "carrusel    publi";
   }
-  .main-index h1 {
+  main .main-index h1 {
     padding-top: 25px;
     padding-bottom: 40px;
     font-family: "Londrina Solid", sans-serif;
     color: white;
     font-size: 2.3rem;
   }
-  .main-index .publicidad {
+  main .main-index .publicidad {
     display: block;
   }
-  .main-index .publicidad img {
+  main .main-index .publicidad img {
     width: 100%;
   }
-  .main-index img {
+  main .main-index img {
     width: 90%;
   }
 }
 /*MEDIA QUERY NOSOTROS*/
 /* Media Query Smartphones */
 @media screen and (max-width: 480px) {
-  .nosotros {
+  main .nosotros {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 120px 320px 320px 320px 320px;
     grid-template-areas: "txt" "n-team" "publi" "n-emprend" "frase";
   }
-  .nosotros h1 {
+  main .nosotros h1 {
     padding-top: 20px;
     padding-bottom: 20px;
     font-size: 3.2rem;
   }
-  .nosotros div {
+  main .nosotros div {
     text-align: center;
   }
 }
 /* Media Query Tablets */
 @media screen and (min-width: 481px) and (max-width: 950px) {
-  .nosotros {
+  main .nosotros {
     display: grid;
     padding-left: 10px;
     padding-right: 10px;
@@ -559,7 +559,7 @@ main .ventas .publicidad-2 {
     grid-template-rows: 150px 280px 280px;
     grid-template-areas: "txt          txt" "n-team       publi" "n-emprend    frase";
   }
-  .nosotros h1 {
+  main .nosotros h1 {
     padding-top: 30px;
     padding-bottom: 10px;
     font-family: "Londrina Solid", sans-serif;
@@ -567,7 +567,7 @@ main .ventas .publicidad-2 {
     font-size: 4rem;
     text-align: center;
   }
-  .nosotros div .img {
+  main .nosotros div .img {
     display: block;
     align-content: center;
     text-align: center;
@@ -577,7 +577,7 @@ main .ventas .publicidad-2 {
 /*MEDIA QUERY RECETAS*/
 /* Media Query Smartphones */
 @media screen and (max-width: 480px) {
-  .recetas {
+  main .recetas {
     display: grid;
     padding-left: 5px;
     padding-right: 5px;
@@ -587,24 +587,24 @@ main .ventas .publicidad-2 {
     grid-template-rows: 100px 400px 400px 400px 800px 400px 400px 400px;
     grid-template-areas: "texto" "receta-1" "receta-2" "receta-3" "publi" "receta-4" "receta-5" "receta-6";
   }
-  .recetas h1 {
+  main .recetas h1 {
     padding: 10px;
     font-size: 2rem;
     padding-bottom: 10px;
     text-align: center;
   }
-  .recetas h2 {
+  main .recetas h2 {
     text-align: center;
     margin-top: 0px;
     padding: 5px 0px 5px 35px;
     font-size: 1.5rem;
   }
-  .recetas h3 {
+  main .recetas h3 {
     text-align: justify;
     padding: 10px 30px 5px 30px;
     font-size: 1.5rem;
   }
-  .recetas .publi-recetas img {
+  main .recetas .publi-recetas img {
     display: block;
     margin-top: 30px;
     margin-bottom: 30px;
@@ -618,7 +618,7 @@ main .ventas .publicidad-2 {
 }
 /* Media Query Tablets */
 @media screen and (min-width: 481px) and (max-width: 950px) {
-  .recetas {
+  main .recetas {
     display: grid;
     padding-left: 15px;
     padding-right: 15px;
@@ -650,49 +650,49 @@ main .ventas .publicidad-2 {
 /*MEDIA QUERY CONTACTOS*/
 /* Media Query Smartphones */
 @media screen and (max-width: 480px) {
-  .contactos {
+  main .contactos {
     display: grid;
     gap: 10px;
     grid-template-columns: 1fr;
     grid-template-rows: 100px 300px 300px 300px;
     grid-template-areas: "texto" "our-team" "mapa" "redes";
   }
-  .contactos h1 {
+  main .contactos h1 {
     text-align: center;
     padding: 10px;
     font-size: 3rem;
   }
-  .contactos section div h2 {
+  main .contactos section div h2 {
     text-align: center;
     padding-bottom: 15px;
     font-size: 2.5rem;
   }
-  .contactos .mapa iframe {
+  main .contactos .mapa iframe {
     border-radius: 10px;
     box-shadow: 3px 3px 2px 2px rgba(0, 0, 0, 0.47);
     width: 80%;
     height: 250px;
   }
-  .contactos .redes-sociales img {
+  main .contactos .redes-sociales img {
     width: 85%;
   }
 }
 /* Media Query Tablets */
 @media screen and (min-width: 481px) and (max-width: 950px) {
-  .contactos {
+  main .contactos {
     display: grid;
     gap: 10px;
     grid-template-columns: 3fr 2fr;
     grid-template-rows: 100px 280px 400px;
     grid-template-areas: "texto  texto" "our-team   mapa" "redes  redes";
   }
-  .contactos h1 {
+  main .contactos h1 {
     font-size: 2.8rem;
   }
-  .contactos section div h2 {
+  main .contactos section div h2 {
     font-size: 2.5rem;
   }
-  .contactos .mapa iframe {
+  main .contactos .mapa iframe {
     border-radius: 10px;
     box-shadow: 3px 3px 2px 2px rgba(0, 0, 0, 0.47);
     width: 80%;
