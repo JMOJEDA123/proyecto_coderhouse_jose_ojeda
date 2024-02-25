@@ -5,7 +5,7 @@ main {
         display: grid;
         gap: 10px;
         grid-template-columns: 3fr 2fr;
-        grid-template-rows: 100px 450px 500px;
+        grid-template-rows: 100px 550px 600px;
         grid-template-areas: 
         "texto          texto"
         "our-team       mapa" 
@@ -35,12 +35,17 @@ main {
         .mapa {
             grid-area: mapa ;
             text-align: center;
+
             iframe {
                 border-radius: 20px;
                 box-shadow: 5px 5px 5px 3px rgba(0, 0, 0, 0.47);
                 width: 90%;
-                height: 380px;
+                height: 490px;
             }
+            h2 {
+                font-size: 3.0rem;
+            }
+
         }
 
         .redes-sociales {
@@ -52,6 +57,7 @@ main {
             }
             h2 {
                 padding-top: 55px;
+                font-size: 3.0rem;
             }
         }
     }

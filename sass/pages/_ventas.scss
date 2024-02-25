@@ -8,7 +8,7 @@ main {
         padding-bottom: 30px;
         gap: 40px;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 100px 500px 500px 500px;
+        grid-template-rows: 100px 600px 600px 600px;
         grid-template-areas: 
         "texto          texto         texto"
         "banner-1      banner-1    publi-1"
@@ -19,12 +19,14 @@ main {
             text-align: center;
             padding-left: 60px;
             padding-bottom: 0;
+            font-size: 4.5rem;
         }
 
         h2 {
             text-align: center;
             padding-left: 60px;
-            padding-bottom: 0;
+            padding-bottom: 15px;
+            font-size: 3.0rem;
         }
 
         .texto-ventas {
@@ -78,6 +80,7 @@ main {
             grid-area: publi-2 ;
             display: block;
             text-align: center;
+            height: 100%;
         }
     }
 }

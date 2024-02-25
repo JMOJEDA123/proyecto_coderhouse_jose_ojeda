@@ -4,7 +4,7 @@ main {
         gap: 10px;
         align-content: center;
         grid-template-columns:  3fr 1fr;
-        grid-template-rows: 150px 550px ;
+        grid-template-rows: 150px 600px ;
         grid-template-areas: 
         "txt       txt"
         "carrusel   publi";
@@ -25,9 +25,8 @@ main {
             }
 
             h2 {
-                background-color: #191919;
-                Border: 2px solid white;
-                box-shadow: 2px 2px 1px 1px rgba(255,255,255,0.75);
+                font-size: 3rem;
+                color: $marronBitter;
                 padding: 5px;
                 margin-bottom: 20px;
                 width: 100%;
@@ -45,6 +44,11 @@ main {
             flex-wrap: wrap;
             justify-content: center;
             align-content: center;
+
+            h2 {
+                font-size: 3rem;
+                Color: $negroEnvejecido
+            }
         }
     }
 }
